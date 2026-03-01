@@ -15,7 +15,7 @@ CREATE TABLE users (
 
 ```sql
 INSERT INTO users (username, password) VALUES
-('chetan', 'password123'),
+('john', 'password@123'),
 ('admin', 'admin@123');
 ```
 
