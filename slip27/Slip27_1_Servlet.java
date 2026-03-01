@@ -13,8 +13,8 @@ public class Slip27_1_Servlet extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "chetan13",
-                    "Ch13et03an05@#");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "postgres",
+                    "root");
 
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM " + tableName + " LIMIT 1");
