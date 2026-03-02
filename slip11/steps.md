@@ -3,6 +3,7 @@
 ### 1. Setup PostgreSQL Database
 
 - Follow the instructions in **`pgsql.md`** in this folder.
+- Use username **'postgres'** and password **'root'**.
 - Ensure the `testdb` and `DONAR` table are created.
 
 ### 2. Compile the Servlet

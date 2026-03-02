@@ -3,6 +3,7 @@
 ### 1. Setup PostgreSQL Database
 
 - Connect to `testdb` as per **`pgsql.md`**.
+- Use username **'postgres'** and password **'root'**.
 - Ensure you have a table like `DONAR` or `users` to test.
 
 ### 2. Compile the Servlet

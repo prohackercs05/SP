@@ -12,9 +12,9 @@ public class Slip11_1_Servlet extends HttpServlet {
         String bgroup = request.getParameter("bgroup");
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "chetan13",
-                    "Ch13et03an05@#");
+            Class.forName("org.postgresql.Driver");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb", "postgres",
+                    "root");
 
             String query = "SELECT * FROM DONAR WHERE blood_group = ?";
             PreparedStatement pst = con.prepareStatement(query);

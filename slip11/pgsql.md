@@ -22,7 +22,15 @@ createdb testdb
 psql testdb
 ```
 
-### 4. Create the Table
+### 4. Set Password (Crucial for Java code)
+
+To make your Java code work with password **'root'**, run this in the shell:
+
+```sql
+ALTER USER postgres WITH PASSWORD 'root';
+```
+
+### 5. Create the Table
 
 ```sql
 create table DONAR(
@@ -42,9 +50,9 @@ create table DONAR(
 ### 6. Insert Sample Data
 
 ```sql
-insert into DONAR values(1, 'Chetan Mahajan', 'B+', '2023-12-05');
-insert into DONAR values(2, 'Manish Kshirsagar', 'O+', '2023-11-20');
-insert into DONAR values(3, 'Mayur Khairnar', 'B+', '2024-01-10');
+insert into DONAR values(1, 'Alice', 'B+', '2023-12-05');
+insert into DONAR values(2, 'Joe', 'O+', '2023-11-20');
+insert into DONAR values(3, 'Bob', 'B+', '2024-01-10');
 ```
 
 ### 7. View All Records

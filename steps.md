@@ -36,6 +36,8 @@ mv Slip2_2.class ../WEB-INF/classes/
 
 ### **Slip 11 (Donor Search)**
 
+Ensure the PostgreSQL JDBC driver is in `WEB-INF/lib`.
+
 ```bash
 cd /opt/tomcat/webapps/servletprograms/slip11
 ```
@@ -77,6 +79,8 @@ mv Slip18_2_Servlet.class ../WEB-INF/classes/
 ```
 
 ### **Slip 19 (Login)**
+
+Ensure the PostgreSQL JDBC driver is in `WEB-INF/lib`.
 
 ```bash
 cd /opt/tomcat/webapps/servletprograms/slip19
