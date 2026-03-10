@@ -20,101 +20,101 @@ $CATALINA_HOME/bin/startup.sh
 
 ## 2. Compile and Deploy Servlets
 
-### **Slip 2 (Request Info)**
+### **S2 (Request Info)**
 
 ```bash
-cd /opt/tomcat/webapps/servletprograms/slip2
+cd /opt/tomcat/webapps/servletprograms/s2
 ```
 
 ```bash
-javac -cp ".:../lib/servlet-api.jar" Slip2_2.java
+javac -cp ".:../lib/servlet-api.jar" S2_2.java
 ```
 
 ```bash
-mv Slip2_2.class ../WEB-INF/classes/
+mv S2_2.class ../WEB-INF/classes/
 ```
 
-### **Slip 11 (Donor Search)**
+### **S11 (Donor Search)**
 
 Ensure the PostgreSQL JDBC driver is in `WEB-INF/lib`.
 
 ```bash
-cd /opt/tomcat/webapps/servletprograms/slip11
+cd /opt/tomcat/webapps/servletprograms/s11
 ```
 
 ```bash
-javac -cp ".:../lib/*" Slip11_1_Servlet.java
+javac -cp ".:../lib/*" S11_1_Servlet.java
 ```
 
 ```bash
-mv Slip11_1_Servlet.class ../WEB-INF/classes/
+mv S11_1_Servlet.class ../WEB-INF/classes/
 ```
 
-### **Slip 15 (Visit Counter)**
+### **S15 (Visit Counter)**
 
 ```bash
-cd /opt/tomcat/webapps/servletprograms/slip15
-```
-
-```bash
-javac -cp ".:../lib/servlet-api.jar" Slip15_2.java
+cd /opt/tomcat/webapps/servletprograms/s15
 ```
 
 ```bash
-mv Slip15_2.class ../WEB-INF/classes/
-```
-
-### **Slip 18 (Student Result)**
-
-```bash
-cd /opt/tomcat/webapps/servletprograms/slip18
+javac -cp ".:../lib/servlet-api.jar" S15_2.java
 ```
 
 ```bash
-javac -cp ".:../lib/servlet-api.jar" Slip18_2_Servlet.java
+mv S15_2.class ../WEB-INF/classes/
+```
+
+### **S18 (Student Result)**
+
+```bash
+cd /opt/tomcat/webapps/servletprograms/s18
 ```
 
 ```bash
-mv Slip18_2_Servlet.class ../WEB-INF/classes/
+javac -cp ".:../lib/servlet-api.jar" S18_2_Servlet.java
 ```
 
-### **Slip 19 (Login)**
+```bash
+mv S18_2_Servlet.class ../WEB-INF/classes/
+```
+
+### **S19 (Login)**
 
 Ensure the PostgreSQL JDBC driver is in `WEB-INF/lib`.
 
 ```bash
-cd /opt/tomcat/webapps/servletprograms/slip19
+cd /opt/tomcat/webapps/servletprograms/s19
 ```
 
 ```bash
-javac -cp ".:../lib/*" Slip19_2_Servlet.java
+javac -cp ".:../lib/*" S19_2_Servlet.java
 ```
 
 ```bash
-mv Slip19_2_Servlet.class ../WEB-INF/classes/
+mv S19_2_Servlet.class ../WEB-INF/classes/
 ```
 
-### **Slip 27 (Table Metadata)**
+### **S27 (Table Metadata)**
 
 ```bash
-cd /opt/tomcat/webapps/servletprograms/slip27
-```
-
-```bash
-javac -cp ".:../lib/*" Slip27_1_Servlet.java
+cd /opt/tomcat/webapps/servletprograms/s27
 ```
 
 ```bash
-mv Slip27_1_Servlet.class ../WEB-INF/classes/
+javac -cp ".:../lib/*" S27_1_Servlet.java
+```
+
+```bash
+mv S27_1_Servlet.class ../WEB-INF/classes/
 ```
 
 ---
 
 ## 3. URLs
 
-- Slip 2: http://localhost:8080/servletprograms/Slip2_2
-- Slip 11: http://localhost:8080/servletprograms/slip11/Slip11_1.html
-- Slip 15: http://localhost:8080/servletprograms/Slip15_2
-- Slip 18: http://localhost:8080/servletprograms/slip18/Slip18_2.html
-- Slip 19: http://localhost:8080/servletprograms/slip19/Slip19_2.html
-- Slip 27: http://localhost:8080/servletprograms/slip27/Slip27_1.html
+- S2: http://localhost:8080/servletprograms/S2_2
+- S11: http://localhost:8080/servletprograms/s11/S11_1.html
+- S15: http://localhost:8080/servletprograms/S15_2
+- S18: http://localhost:8080/servletprograms/s18/S18_2.html
+- S19: http://localhost:8080/servletprograms/s19/S19_2.html
+- S27: http://localhost:8080/servletprograms/s27/S27_1.html
